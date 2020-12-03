@@ -25,12 +25,15 @@
          <children>
             <Label styleClass="login-header" text="Login">
                <VBox.margin>
-                  <Insets bottom="90.0" top="60.0" />
+                  <Insets bottom="60.0" left="20.0" top="60.0" />
                </VBox.margin>
+               <font>
+                  <Font size="29.0" />
+               </font>
             </Label>
             <TextField fx:id="usernameBox" promptText="Username" styleClass="username-box">
                <VBox.margin>
-                  <Insets bottom="30.0" left="20.0" right="20.0" />
+                  <Insets bottom="40.0" left="20.0" right="20.0" />
                </VBox.margin>
             </TextField>
             <PasswordField fx:id="passwordBox" promptText="Password" styleClass="password-box">
@@ -41,6 +44,11 @@
             <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="79.0" styleClass="btn-log" text="Log in">
                <VBox.margin>
                   <Insets left="20.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="Exit">
+               <VBox.margin>
+                  <Insets left="320.0" top="90.0" />
                </VBox.margin>
             </Button>
          </children>
