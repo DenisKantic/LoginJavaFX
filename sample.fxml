@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -17,6 +19,12 @@
             </Label>
          </children>
       </VBox>
-      <VBox layoutX="400.0" prefHeight="450.0" prefWidth="400.0" styleClass="right-side" />
+      <VBox layoutX="400.0" prefHeight="450.0" prefWidth="400.0" styleClass="right-side">
+         <children>
+            <Label styleClass="login-header" text="Login" />
+            <TextField promptText="Username" styleClass="username-box" />
+            <PasswordField promptText="Password" styleClass="password-box" />
+         </children>
+      </VBox>
    </children>
 </Pane>
