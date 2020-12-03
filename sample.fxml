@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" styleClass="pane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox layoutX="6.0" prefHeight="450.0" prefWidth="400.0" styleClass="left-side" />
+      <VBox layoutX="6.0" prefHeight="450.0" prefWidth="400.0" styleClass="left-side">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="79.0" prefWidth="201.0" styleClass="welcome-text" text="Welcome stranger, please log in" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
       <VBox layoutX="400.0" prefHeight="450.0" prefWidth="400.0" styleClass="right-side" />
    </children>
 </Pane>
