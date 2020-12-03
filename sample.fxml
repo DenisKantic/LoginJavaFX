@@ -7,5 +7,6 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" styleClass="pane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox layoutX="6.0" prefHeight="450.0" prefWidth="400.0" styleClass="left-side" />
+      <VBox layoutX="400.0" prefHeight="450.0" prefWidth="400.0" styleClass="right-side" />
    </children>
 </Pane>
