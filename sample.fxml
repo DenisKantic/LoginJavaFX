@@ -12,12 +12,15 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" styleClass="pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox prefHeight="450.0" prefWidth="400.0" styleClass="left-side">
+      <VBox prefHeight="450.0" prefWidth="400.0" styleClass="left-side" stylesheets="@style.css">
          <children>
-            <Label contentDisplay="CENTER" prefHeight="79.0" prefWidth="201.0" styleClass="welcome-text" text="Welcome stranger, please log in" wrapText="true">
+            <Label contentDisplay="CENTER" prefHeight="79.0" prefWidth="201.0" styleClass="welcome-text" stylesheets="@style.css" text="Welcome stranger, please log in" textFill="WHITE" wrapText="true">
                <font>
                   <Font size="19.0" />
                </font>
+               <VBox.margin>
+                  <Insets left="100.0" top="150.0" />
+               </VBox.margin>
             </Label>
          </children>
       </VBox>
@@ -28,7 +31,7 @@
                   <Insets bottom="60.0" left="20.0" top="60.0" />
                </VBox.margin>
                <font>
-                  <Font size="29.0" />
+                  <Font name="System Bold" size="29.0" />
                </font>
             </Label>
             <TextField fx:id="usernameBox" promptText="Username" styleClass="username-box">
@@ -48,7 +51,7 @@
             </Button>
             <Button mnemonicParsing="false" text="Exit">
                <VBox.margin>
-                  <Insets left="320.0" top="90.0" />
+                  <Insets left="320.0" top="70.0" />
                </VBox.margin>
             </Button>
          </children>
