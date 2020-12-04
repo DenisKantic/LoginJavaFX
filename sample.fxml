@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" styleClass="pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" styleClass="pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <VBox prefHeight="450.0" prefWidth="400.0" styleClass="left-side" stylesheets="@style.css">
          <children>
@@ -42,14 +41,6 @@
                   <Insets left="20.0" right="20.0" />
                </padding>
             </TextField>
-            <Label fx:id="wrongUsername" textFill="RED">
-               <VBox.margin>
-                  <Insets bottom="20.0" left="40.0" top="-30.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="12.0" />
-               </font>
-            </Label>
             <PasswordField fx:id="passwordBox" promptText="Password" styleClass="password-box">
                <VBox.margin>
                   <Insets left="20.0" right="20.0" />
@@ -58,7 +49,15 @@
                   <Insets left="20.0" right="20.0" />
                </padding>
             </PasswordField>
-            <Label fx:id="wrongPassword" text="Label" textFill="RED">
+            <Label fx:id="correctInput" layoutX="50.0" layoutY="303.0" textFill="#39d01b">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="-25.0" left="40.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="wrongPassword" textFill="RED">
                <VBox.margin>
                   <Insets left="40.0" top="10.0" />
                </VBox.margin>
@@ -66,7 +65,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="79.0" styleClass="btn-log" text="Log in" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#checkPassword" prefHeight="26.0" prefWidth="79.0" styleClass="btn-log" text="Log in" textFill="WHITE">
                <VBox.margin>
                   <Insets left="20.0" top="30.0" />
                </VBox.margin>
@@ -74,9 +73,9 @@
                   <Font size="21.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" styleClass="exit-btn" stylesheets="@style.css" text="Exit" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#close" styleClass="exit-btn" stylesheets="@style.css" text="Exit" textFill="WHITE">
                <VBox.margin>
-                  <Insets left="320.0" top="60.0" />
+                  <Insets left="320.0" top="30.0" />
                </VBox.margin>
             </Button>
          </children>

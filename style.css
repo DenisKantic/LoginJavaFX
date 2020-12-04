@@ -31,12 +31,24 @@
     -fx-font-size: 16px;
 }
 
+.btn-log:hover{
+    -fx-background-color: #297579;
+}
+
 .exit-btn{
-    -fx-background-radius: 5px;
+    -fx-background-radius: 10px;
     -fx-font-size: 16px;
     -fx-background-color: #E8175D;
 }
 
 .right-side{
     -fx-background-color: #ffffff;
+}
+
+.exit-btn:hover{
+    -fx-background-color: #bb144d;
+}
+
+.exit-btn:focused{
+    -fx-background-color: #e87a78;
 }
