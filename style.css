@@ -1,0 +1,8 @@
+.pane{
+    -fx-background-color: transparent;
+    -fx-border-radius: 20px;
+}
+
+.left-side {
+    -fx-background-color: #E8175D;
+}
