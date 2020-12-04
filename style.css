@@ -36,3 +36,7 @@
     -fx-font-size: 16px;
     -fx-background-color: #E8175D;
 }
+
+.right-side{
+    -fx-background-color: #ffffff;
+}
