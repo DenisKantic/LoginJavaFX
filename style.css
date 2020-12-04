@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .pane{
-    -fx-background-color: transparent;
-    -fx-border-radius: 20px;
+    -fx-font-family: 'Roboto';
 }
 
 .left-side {
     -fx-background-color: #E8175D;
+}
+
+.welcome-text{
+    -fx-font-family: 'Roboto';
+    -fx-font-size: 23px;
+}
+
+.login-header{
+    -fx-font-size: 35px;
+    -fx-font-weight: bold;
 }
